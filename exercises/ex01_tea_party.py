@@ -3,7 +3,7 @@
 __author__ = "730765813"
 
 
-def main_planner(guests: int):
+def main_planner(guests: int) -> None:
     """Displays the total number of tea bags, treats, and cost given guests"""
     print(str("A Cozy Tea Party for " + str(guests) + " People!"))
     print(str("Tea Bags: " + str(tea_bags(guests))))
@@ -18,7 +18,7 @@ def tea_bags(people: int) -> int:
 
 def treats(people: int) -> int:
     """returns the total number of treats given the number of guests"""
-    return int(tea_bags(people) * 1.5)
+    return int(tea_bags(people=people) * 1.5)
 
 
 def cost(tea_count: int, treat_count: int) -> float:
