@@ -2,8 +2,8 @@ __author__ = "730765813"
 
 """File to define River class."""
 
-from fish import Fish
-from bear import Bear
+from ex04.fish import Fish
+from ex04.bear import Bear
 
 
 class River:
