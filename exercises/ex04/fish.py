@@ -6,7 +6,7 @@ __author__ = "730765813"
 class Fish:
     age: int
 
-    def __init__(self):
+    def __init__(self) -> None:
         """Allow for the creation of multiple fish nodes"""
         self.age: int = 0
 

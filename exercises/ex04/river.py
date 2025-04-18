@@ -2,8 +2,8 @@ __author__ = "730765813"
 
 """File to define River class."""
 
-from exercises.ex04.fish import Fish
-from exercises.ex04.bear import Bear
+from fish import Fish
+from bear import Bear
 
 
 class River:
@@ -77,8 +77,9 @@ class River:
     def repopulate_fish(self) -> None:
         """Fish reproduction"""
         num_new_fish = (len(self.fish) // 2) * 4
-        for _ in range(num_new_fish):
-            self.fish.append(Fish())
+        if len(self.fish) > 2:
+            for _ in range(num_new_fish):
+                self.fish.append(Fish())
 
     def repopulate_bears(self) -> None:
         """Bear reproduction"""

@@ -7,7 +7,7 @@ class Bear:
     age: int
     hunger_score: int
 
-    def __init__(self):
+    def __init__(self) -> None:
         """Allow for the creation of multiple bear nodes"""
         self.age: int = 0
         self.hunger_score: int = 0
