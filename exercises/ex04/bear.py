@@ -9,8 +9,8 @@ class Bear:
 
     def __init__(self):
         """Allow for the creation of multiple bear nodes"""
-        self.age = 0
-        self.hunger_score = 0
+        self.age: int = 0
+        self.hunger_score: int = 0
 
     def one_day(self) -> None:
         """How one day impacts a bear"""
