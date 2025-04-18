@@ -1,3 +1,5 @@
+"""Simulate your river."""
+
 __author__ = "730765813"
 
 from exercises.EX04.river import River
